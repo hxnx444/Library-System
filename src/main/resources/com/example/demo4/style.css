@@ -1,0 +1,142 @@
+/* 1. BACKGROUND (Creamy Latte) */
+.root {
+    -fx-background-color: #FDF5E6; /* "Old Lace" - Warm Cream */
+    -fx-font-family: "Verdana", "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* 2. LABELS (Dark Mocha) */
+.label {
+    -fx-text-fill: #4E342E; /* Dark Brown */
+    -fx-font-weight: bold;
+}
+
+/* 3. INPUT FIELDS (Clean White Cards) */
+.text-field, .password-field, .combo-box, .date-picker .text-field, .check-Box {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: transparent;
+    -fx-text-fill: #4E342E;
+    -fx-padding: 8 15 8 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(78, 52, 46, 0.1), 5, 0, 0, 2);
+}
+.check-box{
+-fx-text-fill:#4E342E;
+-fx-font-weight: bold;
+
+}
+.check-box .box{
+ -fx-padding: 3 3 3 3;
+ -fx-border-color: transparent;
+  -fx-background-color: #FFFFFF;
+  -fx-effect: dropshadow(three-pass-box, rgba(78, 52, 46, 0.1), 5, 0, 0, 2);
+  -fx-border-radius: 5;
+}
+.radio-button{
+-fx-text-fill:#4E342E;
+-fx-font-weight: bold;
+}
+.radio-button{
+-fx-background-color: #FFFFFF;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: transparent;
+    -fx-text-fill: #4E342E;
+    -fx-padding: 3 3 3 3;
+    -fx-effect: dropshadow(three-pass-box, rgba(78, 52, 46, 0.1), 5, 0, 0, 2);
+
+}
+.radio-button:selected .dot{
+-fx-background-color: #4E342E;
+}
+/* 4. BUTTONS (Dark Coffee Capsules) */
+.button {
+    -fx-background-color: #5D4037; /* Deep Coffee Brown */
+    -fx-text-fill: #FDF5E6;        /* Cream Text */
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-padding: 10 15 10 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 2);
+}
+
+/* 5. HOVER EFFECT (Lighter Roast) */
+.button:hover {
+    -fx-background-color: #795548; /* Lighter Brown */
+    -fx-translate-y: -2;
+}
+
+/* 6. PRESSED EFFECT */
+.button:pressed {
+    -fx-background-color: #3E2723; /* Dark Espresso */
+    -fx-translate-y: 1;
+}
+
+/* 7. TITLES (Big & Bold Coffee) */
+.title-label {
+    -fx-font-size: 32px;
+    -fx-font-family: "Segoe UI Black", "Arial Rounded MT Bold", serif;
+    -fx-text-fill: #3E2723;
+    -fx-padding: 0 0 20px 0;
+}
+
+/* 8. ALERT DIALOGS */
+.dialog-pane {
+    -fx-background-color: #FDF5E6;
+}
+.dialog-pane .header-panel {
+    -fx-background-color: #8D6E63;
+}
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #FFFFFF;
+}
+.dialog-pane .content.label {
+    -fx-text-fill: #4E342E;
+}
+
+/* =========================================
+   9. TABLE VIEW STYLING (NEW ADDITION)
+   ========================================= */
+
+/* The main table background */
+.table-view {
+    -fx-background-color: transparent; /* Blends with cream background */
+    -fx-table-cell-border-color: transparent;
+}
+
+/* The header row (Mocha) */
+.table-view .column-header-background {
+    -fx-background-color: #5D4037; /* Deep Coffee */
+    -fx-background-radius: 10 10 0 0; /* Rounded top corners */
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-size: 40px; /* Taller header */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #FDF5E6; /* Cream Text */
+    -fx-font-weight: bold;
+}
+
+/* The rows */
+.table-row-cell {
+    -fx-background-color: #FFFFFF; /* White rows */
+    -fx-border-color: transparent transparent #EFEBE9 transparent; /* Subtle line between rows */
+}
+
+/* Alternating rows (Optional - faint coffee tint) */
+.table-row-cell:odd {
+    -fx-background-color: #FAFAFA;
+}
+
+/* Selected row (Latte Color) */
+.table-row-cell:selected {
+    -fx-background-color: #D7CCC8;
+}
+.table-row-cell:selected .text {
+    -fx-fill: #3E2723; /* Dark text on selection */
+}
